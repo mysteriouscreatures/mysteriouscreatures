@@ -1,0 +1,231 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: relative;
+min-height: 100vh;
+width: 100%;
+padding-top: 15vh;
+
+}
+.btn{
+	border-radius: 25px;
+	padding: 10px;
+			background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+}
+a{
+	color: white;
+	text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+/* Navigation */
+
+header{
+	width: 100%;
+	font-size: 1.2em;
+	background-color: rgba(0,0,0,0.5);
+		line-height: 60px;
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+nav{
+
+}
+nav ul{
+	display: flex;
+	color: white;
+	list-style: none;
+	
+}
+nav ul a li{
+	display: inline-block;
+}
+
+nav ul a{
+	margin-right: 20px;
+}
+
+nav ul #logo{
+	flex:1;
+	margin-left: 20px;
+}
+
+/* Navigation */
+
+/* Footer */
+
+footer{
+	width: 100%;
+	position: absolute;
+
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	line-height: 60px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+}
+
+footer ul{
+	display: flex;
+	color: white;
+	list-style: none;
+	
+}
+footer ul a li{
+	display: inline-block;
+}
+
+footer ul a{
+	margin-right: 20px;
+}
+
+footer ul #logo{
+	flex:1;
+	margin-left: 20px;
+}
+
+/* Footer */
+
+/* Card */
+
+.card{
+	border-radius: 25px;
+	background-color: rgba(255,255,255,0.7);
+	margin:0 auto;
+	width: 70%;
+	padding: 15px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	font-size: 1.2em;
+	margin-bottom: 100px;
+}
+.select-cards-block{
+	width: 72%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.select-card{
+	text-align: center;
+	border-radius: 25px;
+	background-color: rgba(255,255,255,0.7);
+		width: 30%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	font-size: 1.2em;
+	margin-bottom: 100px;
+	padding-bottom: 65px;
+	position: relative;
+
+
+}
+
+.select-card p{
+	margin: 10px;
+}
+
+.select-card .btn{
+	position: absolute;
+	bottom: 10px;
+		left: 10px;
+	right: 0;
+	width: 30%;
+}
+
+.select-card img{
+border-radius: 25px 25px 0px 0px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.39);
+	margin-bottom: 15px;
+	height: 250px;
+}
+.card .header{
+	font-weight: ;
+	font-size: 1.3em;
+}
+
+.header-block{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 5em;
+}
+
+@media screen and (max-width: 768px){
+	.select-cards-block{
+		display: block;
+		width: 100%;
+	}
+	.select-card{
+		width: 78%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* Card */
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #56CCF2;  /* fallback for old browsers */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #56999f;
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.center{
+	text-align: center;
+	margin: 0 auto;
+}
