@@ -120,6 +120,10 @@ nav ul #logo {
         top: -180px;
         transition: 0.5s;
     }
+	
+	#mobmenu a{
+		color: black;
+	}
 
     #mobmenu i {
         position: absolute;
