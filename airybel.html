@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mysterious Creatures in Belarusian and British Folklore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="pcmenu">
+                <li id="logo"><a href="">Mysterious Creatures in Belarusian and British Folklore</a></li>
+                <a href="index.html">
+                    <li>Main</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+            <ul id="mobmenu">
+               <a href="index.html"> <li>
+                    Main
+                </li>
+            </a>
+                <li>
+                    About
+                </li>
+                <li>
+                    Contacts
+                </li>
+                <i id="burger" class="fas fa-bars" onclick="burger_menu()"></i>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+        <span class="header-block">Airy Spirits</span>
+    </div>
+    <div id="cards-block">
+    <div class="card info">
+        <p>
+           Gartsuky are spirits that cause winds, storms, hurricanes and other destructive natu-ral phenomena.
+            </p>
+    </div>
+    <img src="img/waterbel/plceholder.jpg" alt="">
+    <div class="card info">
+        <p>
+           Povetriki are evil spirits which fly over swamps and in thick forests. They rise from the place together with wind and fly not paying attention to a casual. They can ruin every-thing on their way.
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+    <footer>
+        <ul>
+            <li id="logo"><a href="">Logo</a></li>
+            <a href="">
+                <li>Main</li>
+            </a>
+            <a href="">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>Contacts</li>
+            </a>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            $('header').addClass("sticky");
+        } else {
+            $('header').removeClass("sticky");
+        }
+    });
+    </script>
+</body>
+
+</html>
