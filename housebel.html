@@ -12,7 +12,7 @@
       <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="gouplink">
     <header>
         <nav>
             <ul id="pcmenu">
@@ -51,7 +51,7 @@
                 In Belarus the whole class of house spirits is known as Domovik. It is a patron of the family and wellbeing in the house. Domovik has a wife Domovikha. They look like little people, but never show themselves to anyone. Domoviks are born, eat, drink, and die like people. They have character and can punish loud and inaccurate hosts, they don't love house scandals. They try to distract the hosts from unpleasant affairs by having hidden some things. Domoviks have sons and daughters.
             </p>
         </div>
-        <img src="img/waterbel/balamytnik.jpg" alt="">
+        <img src="img/waterbel/placeholder.jpg" alt="">
         <div class="card info">
             <p>
                 Yevnik is a character of Belarusian mythology, a symbol of rationality, practicality and economy. Its name comes from the word «yevnya», the place where it lives. Yevnya is a place where dry grain is well stored. It is similar to a big shapeless lump from bran with small short legs. Yevnik helps only its hosts and if strangers come into the drying house, it can frighten them. Yevnik is reserved but lovely and kind. As far as yevna is located near a bathhouse Yevnik is on friendly terms with its neighbor Laznik (from «laznya» - a bath) that lives in a bathhouse under a shelf.
@@ -99,6 +99,7 @@
             </a>
         </ul>
     </footer>
+ <a href="#gouplink"><div id="goup">Up</div></a>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -109,7 +110,14 @@
             $('header').removeClass("sticky");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#goup').addClass("goupact");
+        } else {
+
+            $('#goup').removeClass("goupact");
+        }
+    });
     </script>
 </body>
-
-</html>

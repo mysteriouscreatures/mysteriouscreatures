@@ -12,7 +12,7 @@
       <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="gouplink">
     <header>
         <nav>
             <ul id="pcmenu">
@@ -43,34 +43,60 @@
         </nav>
     </header>
     <div class="center">
-        <span class="header-block">Water creautres</span>
+        <span class="header-block">Trouble and Damage Makers</span>
     </div>
     <div id="cards-block">
     <div class="card info">
         <p>
-            Bagnik is a creature of Belarusian mythology living in “bagna” (a lifeless peat swamp). It always expects its victim in its swamp.
-
-In Belarusian mythology Balamuten or Balamutnіk is a dangerous for women water man with a puffy face, goose bumps and a huge belly.
-
-In Slavic mythology Bolotnik is the owner of swamps that pulls people into the quagmire.
-
-In Belarusian mythology Zhevzhik is the patron Saint of rivers in appearance of a small old man with thin limbs, a long neck and a red beard.
+          Khapun is а small old man who frightens children. It flows over the earth with a huge bag where it puts disobedient children. 
             </p>
     </div>
-    <img src="img/waterbel/balamytnik.jpg" alt="">
+    <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Lozovik is the forest spirit that lives in the vine. It looks like an old one-eyed dwarf with a thick beard and a long stick.
-
-According to Belarusian folklore Oziornitsy are some creatures living in the lake and resembling young women. They have long green hair, dark skin and webbed feet.
-
-According to Belarusian belief, Orzhavennik is a spirit of swamps covered with rust called arzhavenne (from "аржа" [arzha] — rust). It is dirty red with rust spots, and has an extraordinarily large belly and thin legs like horsetail stems.
+         Zheleznaya Baba is a humanoid spirit that lives in kitchen gardens and fields. It is a short old woman with iron breasts and iron hooks. It is an evil spirit that catch-es and kills children left in the field alone. 
         </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Fish Tsar is the master of all fish. According to its wish shoals of fish swim from one lake to another, from one river to another. As a result some places are poor while oth-ers are full of fish.
+           Trastsa is an evil spirit that sends different diseases on people. It appears in spring and in autumn.
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+     <div class="card info">
+        <p>
+           In Slavic folklore Rosomakha is a fantastic creature with unplaited hair ("beast-woman") living in the rye field or hemp. It always appears with a baby in hands and combs its hair with a pike comb. 
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+     <div class="card info">
+        <p>
+           Volosen is a home spirit that disturbs night dreaming and at the same time it is the name of skin disease. It is a short ugly being with long dense wool, with seven palms and long nails. It can scratch people, tousle their hair.
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+     <div class="card info">
+        <p>
+            Serbay is an evil spirit, a personification of hunger. To get rid of it you should bring the first sheaf into the house.  
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+     <div class="card info">
+        <p>
+            In Belarusian and Slavic mythology Zlydzen is a tiny harmful creature that of-ten lives under the stove. Zlydni are symbols of cowardice, meanness, harm. Zlydni are coward therefore they appear only in groups. They look like small humpbacked dogs or cats dressed in big boots and ear-flaps. The most widespread tricks of them are to add some sand into porridge or flour, to throw pans, to break ware, to pour water into oil. When Zlydzen appears in the house the hosts lose their money and wealth. 
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+     <div class="card info">
+        <p>
+          Kumelgan is an evil spirit with a human body covered with horse hair and with ahead of a horse (according to other sources it has hooves). Sometimes it walks like a horse, sometimes like a man. It hates horses and does harm to them: kills or maims.
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+      <div class="card info">
+        <p>
+         White Death is a spirit of a young woman in a white wedding dress. If it sud-denly appears in front of a man out of the ground it means inevitable death. (Supple-ment 2)
         </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
@@ -89,6 +115,7 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             </a>
         </ul>
     </footer>
+ <a href="#gouplink"><div id="goup">Up</div></a>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -99,7 +126,14 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             $('header').removeClass("sticky");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#goup').addClass("goupact");
+        } else {
+
+            $('#goup').removeClass("goupact");
+        }
+    });
     </script>
 </body>
-
-</html>

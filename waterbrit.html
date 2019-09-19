@@ -12,7 +12,7 @@
       <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="gouplink">
     <header>
         <nav>
             <ul id="pcmenu">
@@ -48,32 +48,40 @@
     <div id="cards-block">
     <div class="card info">
         <p>
-            Bagnik is a creature of Belarusian mythology living in “bagna” (a lifeless peat swamp). It always expects its victim in its swamp.
-
-In Belarusian mythology Balamuten or Balamutnіk is a dangerous for women water man with a puffy face, goose bumps and a huge belly.
-
-In Slavic mythology Bolotnik is the owner of swamps that pulls people into the quagmire.
-
-In Belarusian mythology Zhevzhik is the patron Saint of rivers in appearance of a small old man with thin limbs, a long neck and a red beard.
-            </p>
+Aughisky is a mythological Scottish water spirit. It is also known as a Water horse. It likes to leave water, to jump in fields turning into a beautiful horse. It is said that wild Aughisky often attacks human cattle and eats it.             </p>
     </div>
-    <img src="img/waterbel/balamytnik.jpg" alt="">
+    <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Lozovik is the forest spirit that lives in the vine. It looks like an old one-eyed dwarf with a thick beard and a long stick.
-
-According to Belarusian folklore Oziornitsy are some creatures living in the lake and resembling young women. They have long green hair, dark skin and webbed feet.
-
-According to Belarusian belief, Orzhavennik is a spirit of swamps covered with rust called arzhavenne (from "аржа" [arzha] — rust). It is dirty red with rust spots, and has an extraordinarily large belly and thin legs like horsetail stems.
+           Grindylow lives in lakes and marshes throughout Britain and Ireland. It is a horned, pale green demon. British Grindylow is very aggressive towards people. It grabs a man with its long fingers, drags him into the depths of the lake and drown. 
         </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Fish Tsar is the master of all fish. According to its wish shoals of fish swim from one lake to another, from one river to another. As a result some places are poor while oth-ers are full of fish.
+           The UK water spirit Kumara keeps an eye on all incidents in the sea. It has green hair, long green teeth, a red nose and little pig eyes, short hands like fins, skin covered with scales and a long fish tail instead of legs. It doesn’t cause bad weather and storms but collects the souls of drowned sailors and closes them in shells. If you meet Kumara and say Hello politely, it can offer you a tour to the underwater world. 
         </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
+      <div class="card info">
+        <p>
+         In English folklore Dracks are water creatures appearing in the form of floating wooden dishes that lure women. When a woman grabs such a dish Drack immediately shows its true ugly form and drags the poor woman to the bottom to take care of its children.
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+      <div class="card info">
+        <p>
+          Water ladies in Scottish folklore are called Asrai. They are timid and shy, live at the bottom of the sea and in deep lakes. The main enemy of the British Asraya is men. These little creatures are so beautiful that men cannot help grabbing them. They have long green hair and webbed feet. They don't wear clothes. Every hundred years Asrai come to the surface to admire the moonlight. In the sun they evaporate and turn into a tiny puddle. 
+        </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+
+      <div class="card info">
+        <p>
+    In the folklore of the Orkney Islands near Scotland there are sea fairies named Selki. They are the seal-people, kind beings with brown eyes. Selki`s skin allows them to live in the sea. However they have to come up from water from time to time to breathe air. When Selkis come to the coast, they dump skins and turn into indescriba-ble beauties. If you steal the dumped skin, Selki will remain on the land as without skin they can’t survive under water. If it marries, its children will have small webbed fingers and in addition they will have abilities to cure.
+         </p>
+    </div>
+     <img src="img/waterbel/placeholder.jpg" alt="">
     </div>
     <footer>
         <ul>
@@ -89,6 +97,7 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             </a>
         </ul>
     </footer>
+ <a href="#gouplink"><div id="goup">Up</div></a>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -99,7 +108,14 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             $('header').removeClass("sticky");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#goup').addClass("goupact");
+        } else {
+
+            $('#goup').removeClass("goupact");
+        }
+    });
     </script>
 </body>
-
-</html>

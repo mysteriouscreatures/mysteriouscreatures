@@ -12,7 +12,7 @@
       <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="gouplink">
     <header>
         <nav>
             <ul id="pcmenu">
@@ -48,30 +48,46 @@
     <div id="cards-block">
     <div class="card info">
         <p>
-            Bagnik is a creature of Belarusian mythology living in “bagna” (a lifeless peat swamp). It always expects its victim in its swamp.
-
-In Belarusian mythology Balamuten or Balamutnіk is a dangerous for women water man with a puffy face, goose bumps and a huge belly.
-
-In Slavic mythology Bolotnik is the owner of swamps that pulls people into the quagmire.
-
-In Belarusian mythology Zhevzhik is the patron Saint of rivers in appearance of a small old man with thin limbs, a long neck and a red beard.
+           In English mythology Boggart is a spirit or brownie. Usually Boggart is friend-ly with hosts where it lives, but sometimes it can do much harm just for fun. It is pos-sible to meet them at night. They can look like real monsters in the dark. It`s almost impossible to get rid of Boggart.  The only way is to change the house. 
             </p>
     </div>
-    <img src="img/waterbel/balamytnik.jpg" alt="">
+    <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Lozovik is the forest spirit that lives in the vine. It looks like an old one-eyed dwarf with a thick beard and a long stick.
-
-According to Belarusian folklore Oziornitsy are some creatures living in the lake and resembling young women. They have long green hair, dark skin and webbed feet.
-
-According to Belarusian belief, Orzhavennik is a spirit of swamps covered with rust called arzhavenne (from "аржа" [arzha] — rust). It is dirty red with rust spots, and has an extraordinarily large belly and thin legs like horsetail stems.
+           Fak-kahn or Peg-Leg-Jack is an ugly giant in Scottish folklore. It has one hand growing from a breast, one leg, one finger and one eye in the middle of the face. Fak-kahn has some dark blue feathers on the top of its head. It usually has an iron chain in its hand. It can ruin the whole garden in a night. There are twenty chain links in it with fifty poisonous apples.
         </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
-            Fish Tsar is the master of all fish. According to its wish shoals of fish swim from one lake to another, from one river to another. As a result some places are poor while oth-ers are full of fish.
+          In British folklore Goblins are small creatures that live in dark places and caves and cause trouble. They can be dangerous to human beings. Their favourite enter-tainment is to frighten people.
         </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+    <div class="card info">
+        <p>
+            Red Caps are nearly the most spiteful goblins in English folklore. They live in ruins of ancient towers and fortresses along the Scottish border. They often fought in bloody battles and they coloured their caps with human blood. Red Caps have long, sticking-out fangs, bony fingers with claws, huge bloodshot eyes, matted dirty hair. They wear iron boots. In other sources they are cannibals and eat Fairies and people. 
+            </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+    <div class="card info">
+        <p>
+             In English folklore there are other cruel goblins, cannibals and kidnappers named Hobii. Before eating kidnapped people Hobii make them work in the under-ground mines and extract gold. Hobii aren't afraid of anything and anybody except dogs. 
+            </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+    <div class="card info">
+        <p>
+         In English mythology there are nasty fairies named Orcs. They are very silly and spiteful creatures, extremely blood-thirsty. They are afraid of sunlight and live underground or in the subsoil of mountains, in dark wet caves, coming to the surface only at night. Orcs usually serve evil powers. In functions and habits they are similar to Red caps. Orcs are soldiers and they always attack in groups. They are awful with sharp-toothed spiteful muzzles, ominous fiery eyes and swamp - brown skin.
+            </p>
+    </div>
+    <img src="img/waterbel/placeholder.jpg" alt="">
+    <div class="card info">
+        <p>
+         Gooseberry`s wife is one of the most bright representatives of rural children's horror stories. It is well-known on the Isle of Wight and it has an appearance of a huge hairy caterpillar that protects gooseberry bushes and frightens disobedient chil-dren.
+ (Supplement 2)
+
+            </p>
     </div>
     <img src="img/waterbel/placeholder.jpg" alt="">
     </div>
@@ -89,6 +105,7 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             </a>
         </ul>
     </footer>
+ <a href="#gouplink"><div id="goup">Up</div></a>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -99,7 +116,14 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             $('header').removeClass("sticky");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#goup').addClass("goupact");
+        } else {
+
+            $('#goup').removeClass("goupact");
+        }
+    });
     </script>
 </body>
-
-</html>

@@ -12,7 +12,7 @@
       <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="gouplink">
     <header>
         <nav>
             <ul id="pcmenu">
@@ -57,7 +57,7 @@ In Slavic mythology Bolotnik is the owner of swamps that pulls people into the q
 In Belarusian mythology Zhevzhik is the patron Saint of rivers in appearance of a small old man with thin limbs, a long neck and a red beard.
             </p>
     </div>
-    <img src="img/waterbel/balamytnik.jpg" alt="">
+    <img src="img/waterbel/placeholder.jpg" alt="">
     <div class="card info">
         <p>
             Lozovik is the forest spirit that lives in the vine. It looks like an old one-eyed dwarf with a thick beard and a long stick.
@@ -89,6 +89,7 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             </a>
         </ul>
     </footer>
+ <a href="#gouplink"><div id="goup">Up</div></a>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
@@ -99,7 +100,14 @@ According to Belarusian belief, Orzhavennik is a spirit of swamps covered with r
             $('header').removeClass("sticky");
         }
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 500) {
+            $('#goup').addClass("goupact");
+        } else {
+
+            $('#goup').removeClass("goupact");
+        }
+    });
     </script>
 </body>
-
-</html>
