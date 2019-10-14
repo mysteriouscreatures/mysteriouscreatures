@@ -17,6 +17,7 @@ body {
     width: 100%;
     padding-top: 15vh;
     padding-bottom: 15vh;
+    overflow-x: hidden;
 }
 
 html, body{
@@ -93,7 +94,7 @@ nav ul a li {
     display: inline-block;
 }
 
-nav ul a {
+#pcmenu a {
     margin-right: 20px;
 }
 
@@ -222,7 +223,7 @@ footer ul #logo {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
     padding: 15px;
     margin-top: 30px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
@@ -233,7 +234,7 @@ footer ul #logo {
 }
 
 .select-cards-block {
-    width: 72%;
+    width: 87vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -318,7 +319,7 @@ footer ul #logo {
     }
 
     .select-card {
-        width: 78%;
+        width: 95%;
         margin: 0 auto;
         margin-bottom: 30px;
     }
