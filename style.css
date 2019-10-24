@@ -122,7 +122,7 @@ nav ul #logo {
         -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
         position: absolute;
-        top: -180px;
+        top: -120px;
         transition: 0.5s;
     }
 	
@@ -133,7 +133,7 @@ nav ul #logo {
     #mobmenu i {
         position: absolute;
         right: 20px;
-        top: 200px;
+        top: 135px;
         transition: 0.5s;
         color: white;
     }
@@ -357,8 +357,8 @@ width:70%;
 
 #goup{
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	bottom: 40px;
+	right: 40px;
 	background-color: white;
 	color: black;
 	border-radius: 50%;
