@@ -5,17 +5,12 @@
 
 body {
     font-family: 'Chilanka', cursive;
-    background: #00c6ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #00c6ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #dacfe1;
 	height: 100%;
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 25vh;
     padding-bottom: 15vh;
     overflow-x: hidden;
 }
@@ -25,29 +20,14 @@ html, body{
 }
 
 .btn {
-    border-radius: 25px;
     padding: 10px;
-    background: #00c6ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #00c6ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    transition: 0.3s;
+    background: #5a4965;
+    color: #d0a6a6;
     user-select: none;
     white-space: nowrap;
+    text-transform: uppercase;
 
 }
-
-.btn:hover {
-    transition: 0.3s;
-    transform: translateY(5px);
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -68,30 +48,50 @@ h6 {
     display: none !important;
 }
 
+
+    .quizblock{
+        text-align: center;
+        margin-bottom: 10px;
+    }
 /* Navigation */
 
 header {
     width: 100%;
+    background-color: #6d537c;
     font-size: 1.2em;
     line-height: 60px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 999;
-    transition: 0.3s;
 }
 
-nav {}
+nav {
+    background-color:#775e87 ;
+    display: flex;
+}
+nav #name{
+    text-transform: uppercase;
+    font-family: 'Staatliches';
+    color: white;
+    margin-left:15px
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+}
 
 #pcmenu {
     display: flex;
     color: white;
     list-style: none;
-
+    justify-content: space-around;
 }
 
 nav ul a li {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 #pcmenu a {
@@ -109,6 +109,9 @@ nav ul #logo {
 /* Mob nav */
 
 @media screen and (max-width: 768px) {
+    body{
+        padding-top: 30vh;
+    }
     #pcmenu {
         display: none;
     }
@@ -122,7 +125,7 @@ nav ul #logo {
         -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
         position: absolute;
-        top: -120px;
+        top: -300px;
         transition: 0.5s;
     }
 	
@@ -133,7 +136,7 @@ nav ul #logo {
     #mobmenu i {
         position: absolute;
         right: 20px;
-        top: 135px;
+        top: 320px;
         transition: 0.5s;
         color: white;
     }
@@ -145,9 +148,9 @@ nav ul #logo {
     }
     #mobmenu .fa-bars{
     }
-    nav .menuopened {
+    .menuopened {
         position: absolute;
-        top: 0 !important;
+        top: 0px !important;
         transition: 0.5s;
     }
 }
@@ -175,14 +178,11 @@ nav ul #logo {
 footer {
     width: 100%;
     position: absolute;
-
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #6d537c;
     line-height: 60px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
+
 }
 
 footer ul {
@@ -203,6 +203,8 @@ footer ul a {
 footer ul #logo {
     flex: 1;
     margin-left: 20px;
+    font-size: 2em;
+    font-family: 'Staatliches';
 }
 
 /* Footer */
@@ -211,6 +213,7 @@ footer ul #logo {
 
 #welcome-card p {
     margin-bottom: 0px;
+    font-size: 1.3em;
 }
 
 #welcome-card {
@@ -220,17 +223,12 @@ footer ul #logo {
 
 
 .card {
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
     width: 85%;
-    padding: 15px;
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
+    margin-top: px;
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    color:#5a4264;
 }
 
 .select-cards-block {
@@ -243,22 +241,19 @@ footer ul #logo {
 
 .select-card {
     text-align: center;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #866290;
     width: 30%;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
+    color: white;
     font-size: 1.2em;
     margin-bottom: 100px;
     padding-bottom: 65px;
     position: relative;
+    padding: 20px;
 	
 
 }
 #welcome-select .btn{
 	margin-right: 10px;
-	margin-bottom: 3000px;
 }
 
 #welcome-select {
@@ -272,18 +267,14 @@ footer ul #logo {
 
 .select-card .btn {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
     width: 30%;
 }
 
 .select-card img {
-    border-radius: 25px 25px 0px 0px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
     margin-bottom: 15px;
+    height: 50%;
 }
 
 .card .header {
@@ -295,8 +286,9 @@ footer ul #logo {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #5a4264;
     font-size: 5em;
+    font-family: 'Staatliches';
 }
 
 .info img {
@@ -309,7 +301,8 @@ footer ul #logo {
 
 .info {
     text-align: center;
-    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -341,11 +334,7 @@ footer ul #logo {
 }
 
 #cards-block img {
-    width: 50%;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    border-radius: 10px;
+    width: 70%;
 }
 #cards-block .info{
 width:70%;
@@ -359,16 +348,13 @@ width:70%;
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
-	background-color: white;
-	color: black;
+	background-color: rgb(89, 51, 94);
+	color: white;
 	border-radius: 50%;
 	line-height: 70px;
 	width: 70px;
 	text-align: center;
 	font-size: 1.5em;
-	 -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);
     opacity: 0;
     transition: 0.5s;
 }
@@ -392,12 +378,12 @@ width:70%;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #56CCF2;
+    background: #866290;
     /* fallback for old browsers */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #56999f;
+    background-color: #684572;;
 }
 
 ::-webkit-resizer {

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#0072ff">
@@ -14,69 +15,59 @@
 <body id="gouplink">
     <header>
         <nav>
-            <ul id="pcmenu">
-                <li id="logo"><a href="index.html">Mysterious Creatures in Belarusian and British Folklore</a></li>
-                <a href="">
-                    <li><a href="index.html">Main</a></li>
+        <a href="index.html"> <h1 id="name">Mysterious Creatures in Belarusian and British Folklore</h1></a>
+        </nav>
+        <ul id="pcmenu">
+            <a onclick="showselectblock('1')" href="#quizf">
+                <li>Belarusian folklore</li>
+            </a>
+            <a onclick="showquiz('1')" href="#quizf">
+                <li>Quiz</li>
+            </a>
+            <a  onclick="showselectblock('2')" href="#quizf">
+                    <li>British folklore</li>
                 </a>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-                <!--<a href="">
-                    <li>Contacts</li>
-                </a>-->
-            </ul>
-            <ul id="mobmenu">
-                <a href="index.html">
-                    <li>
-                        Main
-                    </li>
-                </a>
-                <br>
-                <a href="about.html">
-                    <li>
-                        About
-                    </li>
-                </a>
-                <!--<li>
-                    Contacts
-                </li>-->
+                <a onclick="showquiz('2')"  href="#quizf">
+                        <li>Quiz</li>
+                    </a>
+                    <a onclick="showquiz('3')"  href="#quizf">
+                            <li>Final Quiz</li>
+                        </a>
+        </ul>
+        <ul id="mobmenu">
+                <a onclick="showselectblock('1')" href="#quizf">
+                        <li>Belarusian folklore</li>
+                    </a>
+                    <a onclick="showquiz('1')" href="#quizf">
+                        <li>Quiz</li>
+                    </a>
+                    <a  onclick="showselectblock('2')" href="#quizf">
+                            <li>British folklore</li>
+                        </a>
+                        <a onclick="showquiz('2')"  href="#quizf">
+                                <li>Quiz</li>
+                            </a>
+                            <a onclick="showquiz('3')"  href="#quizf">
+                                    <li>Final Quiz</li>
+                                </a>
                 <i id="burger" class="fas fa-bars" onclick="burger_menu()"></i>
             </ul>
-        </nav>
     </header>
     <div class="center">
-        <span class="header-block">Welcome!</span>
+        <span class="header-block" id="quizf">Welcome!</span>
     </div>
+ 
     <div class="card" id="welcome-card">
         <p>
            Do you know anything about mysterious creatures of Belarus and Britain? Have you ever faced any of them in real life? Or in the virtuality? If not, you can find a lot of interesting and useful information here! Besides you have chance to do very interesting quizes on the topic.
         </p>
         <br>
     </div>
-    <div class="card" id="welcome-select">
-        <a onclick="showselectblock('1')" class="btn" style="background: #396afc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">Belarusian folklore</a>
- <a target="_blank" href="https://www.educaplay.com/learning-resources/4899578-belarusian_mysterious_creature.html" class="btn" style="background: #396afc;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">Quiz</a>
-        <br>
-        <br>
-        <br>
-        <a onclick="showselectblock('2')" class="btn" style="background: #4776E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-">British folklore</a>
- <a href="https://www.educaplay.com/learning-resources/4896089-british_mysterious_creatures.html" target="_blank" class="btn" style="background: #4776E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-">Qiuz</a>
-    </div>
+    <div class="quizblock">
+            <iframe id="firstquiz" class="hidden" width="795"  height="690" frameborder="0" src="https://www.educaplay.com/en/learningresources/4899578/html5/belarusian_mysterious_creature.htm"></iframe>
+            <iframe id="secondquiz" class="hidden" width="795"  height="690" frameborder="0" src="https://www.educaplay.com/en/learningresources/4896089/html5/british_mysterious_creatures.htm""></iframe>
+            <iframe id="finalquiz" class="hidden" width="795" height="690" frameborder="0" src="https://www.educaplay.com/en/learningresources/4906156/html5/mysterious_creatures_around_us.htm"></iframe>
+        </div>
     <div class="select-cards-block" id="first-select-block">
         <div class="select-card">
             <img src="img/waterbel/orzhavennik.png" alt="" width="100%">
@@ -163,7 +154,7 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
     <footer>
         <ul>
             <li id="logo"><a href="">Mysterious Creatures</a></li>
-            <a href="index.html">
+            <a href="#gouplink">
                 <li>Main</li>
             </a>
             <a href="about.html">
