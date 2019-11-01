@@ -65,3 +65,9 @@ function burger_menu(){
 	}
 }
 
+function closeMenu(){
+	mobmenu.classList.remove("menuopened");
+	burger.classList.add("fa-bars");
+	burger.classList.remove("fa-times");
+	isburger = false;
+}

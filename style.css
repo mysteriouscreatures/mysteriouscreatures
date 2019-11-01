@@ -11,7 +11,7 @@ body {
     min-height: 70vh;
     width: 100%;
     padding-top: 25vh;
-    padding-bottom: 15vh;
+    padding-bottom: 25vh;
     overflow-x: hidden;
 }
 
@@ -310,9 +310,12 @@ footer ul #logo {
         display: block;
         width: 100%;
     }
-
+    #goup{
+        right: 10px !important;
+        bottom: 10px !important;
+    }
     .select-card {
-        width: 95%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -351,8 +354,8 @@ width:70%;
 	background-color: rgb(89, 51, 94);
 	color: white;
 	border-radius: 50%;
-	line-height: 70px;
-	width: 70px;
+	line-height: 50px;
+	width: 50px;
 	text-align: center;
 	font-size: 1.5em;
     opacity: 0;
